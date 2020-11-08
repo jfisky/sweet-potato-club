@@ -1,0 +1,261 @@
+/* UNIVERSAL STYLING */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;;
+}
+
+body {
+    min-width: 650px;
+    margin: 0px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: hsl(208, 3%, 19%);
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #e1deeb;
+}
+
+h2 {
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 24px;
+    /* text-transform: lowercase; */
+    color: hsl(309, 97%, 14%);
+    margin-top: 0px;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: hsl(309, 97%, 14%);
+    width: 100%;
+    height: 160px;
+    margin: 0px;
+    padding: 0 10%;
+    text-align: center;
+}
+
+h1 {
+    display: inline-block;
+    width: auto;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 60px;
+    text-transform: lowercase;
+    color: hsl(161, 18%, 54%); 
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+nav {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0px 0px 0px auto;
+}
+
+nav ul.desktop {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+nav ul.desktop li {
+    font-family: 'Nunito', sans-serif;
+    display: inline-block;
+    margin: 0px 0px 0px 20px;
+    vertical-align: middle;
+}
+
+nav ul.desktop li a {
+    font-size: 26px;
+    letter-spacing: 1px;
+    color: hsl(293, 28%, 69%);
+    text-decoration: none;
+}
+
+nav ul.desktop li a:hover {
+    cursor: pointer;
+    color: #e1deeb;
+}
+
+.navbar {
+    display: inline-block;
+    /* justify-content: space-around; */
+    /* flex-flow: row wrap; */
+    /* align-content: space-between; */
+    margin: 0px;
+    padding: 0px 0px 20px 0px;
+}
+
+.navbar p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navbar p a {
+    font-size: 26px;
+    letter-spacing: 1px;
+    color: hsl(293, 28%, 69%);
+    text-decoration: none;
+}
+
+.navbar p a:hover {
+    cursor: pointer;
+    color: #e1deeb;
+}
+
+/* MAIN MISC */
+
+main {
+    padding: 60px 0px;
+    background-color: #e1deeb;
+}
+
+/* DESCRIPTION */
+.description {
+    margin: 80px 10%;
+}
+
+.description p {
+    line-height: 200%;
+}
+
+.description p span {
+    font-weight: 400;
+    color: hsl(74, 55%, 43%);
+    cursor: pointer;
+}
+
+/* PHOTOS ROW */
+
+.photos-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 80px 10%;
+}
+
+.photos-container figure {
+    width: 30%;
+    height: auto;
+    margin: 0px;
+}
+
+.photos-container figure img {
+    width: 100%;
+    height: auto;
+}
+
+/* QUOTE SECTION */
+.quote-stripe {
+    background-color: hsl(161, 18%, 54%);
+    width: 100%;
+    padding: 40px 10%;
+}
+
+.quote-stripe p.quote {
+    font-size: 40px;
+    color: #e1deeb;
+    letter-spacing: 2px;
+}
+
+.quote-stripe p.quote-by {
+    font-size: 24px;
+    color: #e1deeb;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+/* CLOSING */
+.closing {
+    margin: 100px 15% 40px 15%;
+    text-align: center;
+}
+
+.closing h2 span {
+    font-weight: 700;
+    color: hsl(74, 55%, 43%);
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+    background-color: hsl(309, 97%, 14%);
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    padding: 0 10%;
+    text-align: center;
+}
+
+.footer-nav ul.desktop {
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+}
+
+.footer-nav-item {
+    font-family: 'Nunito', sans-serif;
+    display: inline-block;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+.footer-nav-item+.footer-nav-item {
+    margin-left: 80px;
+}
+
+.footer-nav-item a {
+    font-size: 26px;
+    letter-spacing: 1px;
+    color: hsl(293, 28%, 69%);
+    text-decoration: none;
+}
+
+.footer-nav ul.desktop li a:hover {
+    cursor: pointer;
+    color: #e1deeb;
+}
+
+/* MOBILE FORMATTING */
+
+@media screen and (max-width: 900px), (max-device-width: 900px) {
+    .description, .photos-container, .closing {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .photos-container {
+        flex-flow: column nowrap;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .photos-container figure {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    header, footer {
+        padding: 0 5%;
+    }
+}
