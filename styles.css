@@ -255,6 +255,10 @@ footer {
         margin-bottom: 40px;
     }
 
+    .quote-stripe {
+        padding: 40px 5%;
+    }
+
     header, footer {
         padding: 0 5%;
     }
